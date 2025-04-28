@@ -284,4 +284,5 @@ db.client.createIndex(
 
 ```bash
 db.client.getIndexes();
+
 ```
