@@ -1,0 +1,11 @@
+# Usa a imagem oficial do MongoDB
+FROM mongo:latest
+
+# Define variáveis de ambiente 
+ENV MONGO_INITDB_ROOT_USERNAME=admin
+ENV MONGO_INITDB_ROOT_PASSWORD=adminpassword
+
+# Expõe a porta padrão do MongoDB
+EXPOSE 27017
+
+CMD [ "mongod", "--bind_ip_all", "0.0.0.0"]
